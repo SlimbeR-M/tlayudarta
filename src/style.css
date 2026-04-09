@@ -1,0 +1,121 @@
+/* --- MONTSERRAT --- */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- PLAYFAIR DISPLAY --- */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- SATISFY --- */
+@font-face {
+    font-family: 'Satisfy';
+    src: url('./assets/fonts/Satisfy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-principal: #fce7d4;
+    --blanco: #e0e0e0;
+    --amarillo: #e0ad22;
+    --rojo: #d91515;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Playfair Display', 'Montserrat', 'Satisfy',  Arial;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-principal);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #27852d;
+    position: sticky;
+    top: 0;
+}
+
+.header__text {
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.header__text-color {
+    color: var(--amarillo);
+}
+
+.header__nav {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    list-style: none;
+    margin: 0 6px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.header__button {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 5px 12px;
+    background-color: var(--rojo);
+    border-radius: 15px;
+}
