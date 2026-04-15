@@ -148,6 +148,14 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
+.header__menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 
 /* Hero section */
 .hero {
@@ -1260,6 +1268,33 @@ body, html {
     .header__button {
         padding: 8px 15px;
     }
+
+    .header__menu-btn {
+        display: block; 
+    }
+
+    .header__menu-icon {
+        width: 35px; 
+        filter: invert();
+    }
+
+    .header__button {
+        display: none; 
+    }
+
+    .header__menu-btn {
+        display: block; 
+        align-self: center; 
+        margin: 0; 
+        line-height: 0;
+    }
+
+    .header__menu-icon {
+        width: 35px; 
+        filter: invert();
+        display: block; 
+    }
+
 
     /* Hero Section */
     .hero {
